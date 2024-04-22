@@ -10,13 +10,6 @@ public class Pessoa{
         this.telefone = telefone;
     }
 
-    /*construtor GUI
-    public Pessoa (JTextField nome, JTextField endereco, JTextField telefone){
-        this.nome = String.valueOf(nome); //convertendo o textField para uma String
-        this.endereco = String.valueOf(endereco);
-        this.telefone = String.valueOf(telefone);
-    } */
-
     //get
     public String getNome() {return nome;}
 
