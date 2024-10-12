@@ -1,0 +1,15 @@
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS "Usuários" (
+	"id"	INTEGER NOT NULL UNIQUE,
+	"nome"	TEXT NOT NULL,
+	"email"	TEXT NOT NULL UNIQUE,
+	"senha"	TEXT NOT NULL,
+	"telefone"	TEXT NOT NULL UNIQUE,
+	"cpf"	INTEGER NOT NULL UNIQUE,
+	"cidade_estado"	TEXT NOT NULL,
+	"rua_numero"	TEXT NOT NULL,
+	"pais"	TEXT NOT NULL,
+	"cep"	INTEGER NOT NULL,
+	PRIMARY KEY("id")
+);
+COMMIT;
